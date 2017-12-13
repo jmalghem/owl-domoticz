@@ -22,7 +22,7 @@ make the script executable & run it : chmod +x owl.py & ./owl.py
 
 - Systemd script -->
 Here is a sample systemd script you can use to start the script as a daemon. The owl.py has been moved to /usr/local/bin.
-Filename is : /etc/systemd/system/owl-forwarder.service
+Filename is : /etc/systemd/system/owl-forwarder.service. Add link to start the service at startup : ln -s /etc/systemd/system/owl-forwarder.service /etc/systemd/system/multi-user.target.wants/owl-forwarder.service
 
 ```
 [Unit]
